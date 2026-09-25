@@ -3,10 +3,9 @@
   "name": "LittlerootTown_MaysHouse_1F",
   "layout": "LAYOUT_LITTLEROOT_TOWN_MAYS_HOUSE_1F",
   "music": "MUS_LITTLEROOT",
-  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
-  "weather": "WEATHER_NONE",
+  "weather": "WEATHER_SHADE",
   "map_type": "MAP_TYPE_INDOOR",
   "allow_cycling": false,
   "allow_escaping": false,
@@ -18,8 +17,8 @@
     {
       "local_id": "LOCALID_PLAYERS_HOUSE_1F_MOM",
       "graphics_id": "OBJ_EVENT_GFX_MOM",
-      "x": 8,
-      "y": 6,
+      "x": -7,
+      "y": 0,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
@@ -31,8 +30,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_VIGOROTH_FACING_AWAY",
-      "x": 6,
-      "y": 5,
+      "x": -5,
+      "y": 0,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_UP",
       "movement_range_x": 0,
@@ -44,8 +43,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_VIGOROTH_CARRYING_BOX",
-      "x": 9,
-      "y": 3,
+      "x": -6,
+      "y": 0,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WALK_LEFT_AND_RIGHT",
       "movement_range_x": 3,
@@ -58,8 +57,8 @@
     {
       "local_id": "LOCALID_RIVALS_HOUSE_1F_MOM",
       "graphics_id": "OBJ_EVENT_GFX_WOMAN_4",
-      "x": 8,
-      "y": 7,
+      "x": -7,
+      "y": 0,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
@@ -72,8 +71,8 @@
     {
       "local_id": "LOCALID_PLAYERS_HOUSE_1F_DAD",
       "graphics_id": "OBJ_EVENT_GFX_NORMAN",
-      "x": 5,
-      "y": 6,
+      "x": -7,
+      "y": 0,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 1,
@@ -85,8 +84,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_NINJA_BOY",
-      "x": 9,
-      "y": 5,
+      "x": -7,
+      "y": 0,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
       "movement_range_x": 1,
@@ -99,8 +98,8 @@
     {
       "local_id": "LOCALID_RIVALS_HOUSE_1F_RIVAL",
       "graphics_id": "OBJ_EVENT_GFX_RIVAL_MAY_NORMAL",
-      "x": 2,
-      "y": 8,
+      "x": -4,
+      "y": 0,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 1,
@@ -109,26 +108,52 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
       "flag": "FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_MAY"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_DEOXYS",
+      "x": 14,
+      "y": 3,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Mareep_Talk",
+      "flag": "FLAG_UNUSED_0x494"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
+      "x": 5,
+      "y": 21,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Rojas_Talk",
+      "flag": "0"
     }
   ],
   "warp_events": [
     {
-      "x": 1,
-      "y": 8,
+      "x": 4,
+      "y": 27,
+      "elevation": 0,
+      "dest_map": "MAP_LITTLEROOT_TOWN",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 5,
+      "y": 27,
       "elevation": 0,
       "dest_map": "MAP_LITTLEROOT_TOWN",
       "dest_warp_id": "0"
     },
     {
-      "x": 2,
-      "y": 8,
-      "elevation": 0,
-      "dest_map": "MAP_LITTLEROOT_TOWN",
-      "dest_warp_id": "0"
-    },
-    {
-      "x": 2,
-      "y": 2,
+      "x": -7,
+      "y": 1,
       "elevation": 0,
       "dest_map": "MAP_LITTLEROOT_TOWN_MAYS_HOUSE_2F",
       "dest_warp_id": "0"
@@ -137,8 +162,8 @@
   "coord_events": [
     {
       "type": "trigger",
-      "x": 2,
-      "y": 8,
+      "x": -7,
+      "y": 3,
       "elevation": 0,
       "var": "VAR_LITTLEROOT_INTRO_STATE",
       "var_value": "4",
@@ -146,8 +171,8 @@
     },
     {
       "type": "trigger",
-      "x": 1,
-      "y": 3,
+      "x": -6,
+      "y": 11,
       "elevation": 0,
       "var": "VAR_LITTLEROOT_RIVAL_STATE",
       "var_value": "2",
@@ -155,8 +180,8 @@
     },
     {
       "type": "trigger",
-      "x": 2,
-      "y": 4,
+      "x": -6,
+      "y": 9,
       "elevation": 0,
       "var": "VAR_LITTLEROOT_RIVAL_STATE",
       "var_value": "2",
@@ -164,13 +189,14 @@
     },
     {
       "type": "trigger",
-      "x": 3,
-      "y": 3,
+      "x": -6,
+      "y": 10,
       "elevation": 0,
       "var": "VAR_LITTLEROOT_RIVAL_STATE",
       "var_value": "2",
       "script": "LittlerootTown_MaysHouse_1F_EventScript_MeetRival2"
     }
   ],
-  "bg_events": []
+  "bg_events": [],
+  "region": "REGION_HOENN"
 }
