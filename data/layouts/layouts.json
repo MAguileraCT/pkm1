@@ -9323,6 +9323,16 @@
       "border_height": 2,
       "border_width": 2,
       "layout_version": "frlg"
+    },
+    {
+      "id": "LAYOUT_TRIAL_MAP",
+      "name": "TrialMap_Layout",
+      "width": 24,
+      "height": 24,
+      "primary_tileset": "gTileset_Primary",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/TrialMap/border.bin",
+      "blockdata_filepath": "data/layouts/TrialMap/map.bin"
     }
   ]
 }
